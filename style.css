@@ -111,12 +111,14 @@ p {
   padding: 5px;
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 800px) { 
+@media (max-width: 800px) and (orientation: portrait) {
   .container {
     max-width: 600px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .container {
+    max-width: 800px;
   }
 }
